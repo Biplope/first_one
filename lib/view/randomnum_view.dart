@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class RandomNumber extends StatefulWidget {
-  const RandomNumber({Key?key});
+  const RandomNumber({Key? key}) : super(key: key);
 
   @override
   State<RandomNumber> createState() => _RandomNumberState();

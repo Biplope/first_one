@@ -1,6 +1,6 @@
 import 'package:first_one/app/routes/app_route.dart';
+import 'package:first_one/theme/theme_data.dart';
 import 'package:flutter/material.dart';
-
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -10,8 +10,9 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Course',
-      initialRoute: AppRoute.dashboardRoute,
+      initialRoute: AppRoute.splashscreen,
       routes: AppRoute.getApplicationRoute(),
+      theme: getApplicationTheme(),
     );
   }
 }

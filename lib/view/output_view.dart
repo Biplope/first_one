@@ -1,3 +1,4 @@
+import 'package:first_one/app/common/output.dart';
 import 'package:flutter/material.dart';
 
 class OutputView extends StatelessWidget {
@@ -5,9 +6,24 @@ class OutputView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int result = ModalRoute.of(context)!.settings.arguments as int;
     return Scaffold(
-      body: SafeArea(child: Text("Resutl: $result")),
+      appBar: AppBar(
+        title: const Text('Simple ListView'),
+      ),
+      body: const Column(
+        children: [
+          Align(
+            alignment: Alignment.topLeft,
+            child: Padding(
+              padding: EdgeInsets.only(left: 2),
+              child: Text(
+                '',
+              ),
+            ),
+          ),
+          output(),
+        ],
+      ),
     );
   }
 }

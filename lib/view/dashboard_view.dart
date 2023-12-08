@@ -18,7 +18,7 @@ class DashboardView extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushNamed(context, AppRoute.arithmeticRoute);
                   },
-                  child: const Text('Arithmetic'),
+                  child: const Text('Enter'),
                 ),
               ),
               SizedBox(
@@ -27,7 +27,25 @@ class DashboardView extends StatelessWidget {
                   onPressed: () {
                     Navigator.pushNamed(context, AppRoute.ranNum);
                   },
-                  child: const Text('Random Number'),
+                  child: const Text('Save'),
+                ),
+              ),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoute.containerRoute);
+                  },
+                  child: const Text('Container'),
+                ),
+              ),
+              SizedBox(
+                width: double.infinity,
+                child: ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, AppRoute.imageRoute);
+                  },
+                  child: const Text('Image'),
                 ),
               )
             ],
